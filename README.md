@@ -1,2 +1,2 @@
 # myLaTeX
-bash scripts for easy create my LaTeX Documentes
+Bash scripts for easy create my LaTeX Documentes

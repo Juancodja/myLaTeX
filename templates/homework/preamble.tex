@@ -1,0 +1,60 @@
+% Preamble for homework templates
+
+% User Packages
+
+\usepackage{amsmath} % Math packages
+\usepackage{graphicx} % Allows for eps images
+\usepackage{listings} % Allows for code blocks
+\usepackage{color} % Allows for color text
+\usepackage{fancyhdr} % Allows for custom headers
+\usepackage{lastpage} % Allows for page numbering
+\usepackage{hyperref} % Allows for hyperlinks
+\usepackage{float} % Allows for floating images
+\usepackage{caption} % Allows for captions
+\usepackage{subcaption} % Allows for subfigures
+\usepackage{tikz} % Allows for drawing
+
+
+\usepackage[right=2cm, left=2cm, bottom=3cm]{geometry} % Allows for custom margins
+
+
+% Page Formatting
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{\coursename}}
+\rhead{ \fancyplain{}{\authornickname \- \the\year} }
+\rfoot{ \fancyplain{}{\thepage} }
+
+
+% Code Custom Colors
+% MATLAB
+\definecolor{codecomment}{rgb}{0.13,0.55,0.13}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblack}{rgb}{0,0,0}
+
+
+\lstdefinestyle{mystyle}{
+  language=Matlab,
+  backgroundcolor=\color{white},
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny\color{codegray},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=no,
+  rulecolor=\color{black},
+  tabsize=2,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  keywordstyle=\color{black},
+  commentstyle=\color{codecomment},
+  stringstyle=\color{codepurple},
+  morekeywords={matlab2tikz},
+  morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+  identifierstyle=\color{black},
+}
+\lstset{style=mystyle}
